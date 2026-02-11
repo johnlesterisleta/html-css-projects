@@ -1,50 +1,38 @@
 :root {
-  /* Base Colors */
-  --primary-color: #333333;        /* Main text / headers */
-  --primary-hover: #000000;        /* Darker for hover or emphasis */
+    /* Base Colors */
+    --primary-color: #333333;        /* Main text / headers */
+    --background-color: #ffffff;     /* Page background */
+    --background-alt: #f7f7f7;       /* Alternate sections / cards */
 
-  --secondary-color: #555555;      /* Secondary text / subtitles */
-  --secondary-hover: #333333;
+    /* Links */
+    --link-color: #555555;
+    --link-hover: #333333;
 
-  --accent-color: #888888;         /* Subtle highlights, lines, small buttons */
-  --accent-hover: #666666;
+    /* Spacing / Layout */
+    --nav-height: 4rem;              /* Total height of nav bar */
+    --header-extra-padding: 2rem;        /* extra spacing for header content */
+    --header-padding: calc(var(--nav-height) + var(--header-extra-padding));
+    --container-padding: 2rem;       
+    --section-gap: 4rem;             
 
-  --background-color: #ffffff;     /* Main page background */
-  --background-alt: #f7f7f7;       /* Alternate sections / cards */
-  --surface-color: #eeeeee;        /* Panels, containers, cards */
+    /* Typography */
+    --font-family-base: 'Inter', sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
 
-  --text-color: #333333;           /* Primary text */
-  --text-muted: #777777;           /* Secondary / muted text */
-  --text-inverse: #ffffff;         /* Text on dark backgrounds */
+    /* Borders / Radius */
+    --border-color: #dddddd; /* Default borders */
+    --border-hover: #bbbbbb; /* Hover / focus borders */ 
+    --border-focus: #999999; /* Input focus, active outlines */ 
+    --shadow-color: rgba(0, 0, 0, 0.05); /* Subtle shadows for depth */
 
-  /* Borders & Shadows */
-  --border-color: #dddddd;         /* Default borders */
-  --border-hover: #bbbbbb;         /* Hover / focus borders */
-  --border-focus: #999999;         /* Input focus, active outlines */
-  --shadow-color: rgba(0, 0, 0, 0.05); /* Subtle shadows for depth */
+    /* Hover / Transitions */
+    --transition-speed: 0.3s;
+    --transition-ease: ease-in-out;
 
-  /* Status / Feedback (neutral versions) */
-  --success-color: #4d4d4d;        /* Neutral success tone */
-  --success-bg: #e6e6e6;
-
-  --error-color: #666666;          /* Neutral error tone */
-  --error-bg: #f2f2f2;
-
-  --warning-color: #888888;
-  --warning-bg: #f5f5f5;
-
-  --info-color: #999999;
-  --info-bg: #f7f7f7;
-
-  /* Links & Buttons */
-  --link-color: #555555;
-  --link-hover: #333333;
-
-  --button-primary-bg: #eeeeee;
-  --button-primary-text: #333333;
-
-  --button-secondary-bg: #ffffff;
-  --button-secondary-text: #555555;
+    /* Underline / Nav effects */
+    --underline-height: 2px;
+    
 }
 *{
     margin: 0;
@@ -55,12 +43,15 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position:fixed;
     top: 0;
     left: 50%;
     translate: -50%;
     width: 100%;
-    padding: 25px;
+    height: var(--nav-height);
     border-bottom: 2px solid var(--border-color);
 }
 nav a{
@@ -73,5 +64,11 @@ nav a:hover{
 }
 nav a.active{
     color: var(--link-hover);
+}
+header{
+    padding-top: var(--header-padding);
+}
+h1{
+
 }
 
