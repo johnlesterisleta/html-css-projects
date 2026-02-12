@@ -32,8 +32,8 @@ h1{
     font-size: 3.75rem;
 }
 h1 + p{
-    width: 800px;
     margin: 35px auto;
+    padding-inline: 35px;
 }
 #cta-button{
     text-decoration: none;
@@ -48,10 +48,24 @@ h1 + p{
 #cta-button:hover{
     scale: 1.1;
 }
-
 .video-player{
     margin-top: 30px;
-    width: min(1000px,100%);
+    width: min(1000px, 100%);
     aspect-ratio: 16/9;
     border-radius: 15px;
+}
+.container{
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-top: 150px;
+    margin-inline: auto;
+    width: 1000px;
+    height: 600px;
+    max-width: 90%;
+    min-width: 90%;
+    min-height: 50%;
+    overflow: auto;
 }
