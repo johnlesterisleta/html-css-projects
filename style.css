@@ -85,6 +85,11 @@ h1 + p{
 }
 .item > h2{
     margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+.item:hover{
+    scale: 1.1;
+    cursor: pointer;
 }
 .item:first-child{
     border: 1px solid black;
@@ -96,4 +101,37 @@ h1 + p{
 .item:nth-child(3){
     background-color: black;
     color: white;
+}
+form{
+    margin-top: 30px;
+}
+input{
+    display:block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font: inherit;
+    border-radius: 30px;
+}
+input[type="text"], input[type="password"]{
+    padding: 5px 20px;
+    width: 400px;
+    height: 50px;
+    border: none;
+    background-color: rgb(232, 230, 230)
+}
+input[type="text"], input[type="password"]:focus{
+    outline: none;
+}
+input[type="submit"]{
+    padding: 5px 30px;
+    border: none;
+    background-color: rgb(91, 91, 255);
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+input[type="submit"]:hover{
+    scale: 1.1;
+    background-color: rgb(81, 81, 251);
 }
