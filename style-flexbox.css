@@ -1,0 +1,15 @@
+
+body{
+    min-height: 800px;
+    border: 8px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: skyblue;
+    font-size: 40pt;
+}
