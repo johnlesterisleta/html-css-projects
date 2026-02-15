@@ -3,27 +3,26 @@ body{
     border: 8px solid black;
     gap: 20px;
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
     place-content: center;
+    background-color: grey;
 }
 #box-1{
 }
 .box{
-    flex: 1 1 150px;
-    min-width: 150px;
+    flex: 1 1 50px;
+    min-width: 50px;
     max-width: 200px;
-    height: 200px;
-    flex-shrink: 1;
+    height: 50px;
     background-color: skyblue;
-    font-size: 40pt;
+    font-size: 20pt;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-@media(max-width:500px) {
-     body{
-        flex-wrap: wrap;
-     }
+@media(min-width: 500px){
+    body{
+        background-color: blue;
+    }
 }
