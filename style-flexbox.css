@@ -1,17 +1,19 @@
 
 body{
     border: 8px solid black;
-    display: flex;
-    flex-wrap: nowrap;
     gap: 20px;
+    display: flex;
+    flex-wrap:nowrap;
+    place-content: center;
 }
 #box-1{
 }
 .box{
-    flex-shrink: 1;
-    min-width: 200px;
+    flex: 1 1 150px;
+    min-width: 150px;
+    max-width: 200px;
     height: 200px;
-    width: 200px;
+    flex-shrink: 1;
     background-color: skyblue;
     font-size: 40pt;
     display: flex;
@@ -20,7 +22,7 @@ body{
     
 }
 
-@media(max-width:575px) {
+@media(max-width:500px) {
      body{
         flex-wrap: wrap;
      }
