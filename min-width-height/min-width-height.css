@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    padding: 25px;
+    border-bottom: 2px solid grey;
+}
+nav a{
+    text-decoration: none;
+    color: grey;
+    margin: 0 20px;
+}
+nav a:hover{
+    color: black;
+}
+nav a.active{
+    color: red;
+}
+header{
+    padding-top: calc(50px + 1rem + 2px);
+}
+h1{
+    margin-top: 100px;
+    font-size: 3.75rem;
+}
+h1 + p{
+    margin: 35px auto;
+    padding-inline: 35px;
+}
+#cta-button{
+    text-decoration: none;
+    text-transform: uppercase;
+    background: linear-gradient(to right, white, grey);
+    display: inline-block;
+    padding: 1em 3em;
+    font-weight: bold;
+    border-radius: 1000px;
+    transition: 0.3s ease;
+}
+#cta-button:hover{
+    scale: 1.1;
+}
+.video-player{
+    margin-top: 30px;
+    width: min(1000px, 100%);
+    aspect-ratio: 16/9;
+    border-radius: 15px;
+}
+.container{
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-inline: auto;
+    width: 1000px;
+    height: 600px;
+    max-width: 90%;
+    min-width: 90%;
+    min-height: 50%;
+    overflow: auto;
+}
+.product-container{
+    margin-top: 30px;
+}
+.item{
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 0 20px;
+    align-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+.item > h2{
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+.item:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.item:first-child{
+    border: 1px solid black;
+}
+.item:nth-child(2){
+    background-color: rgb(158, 64, 224);
+    color: white;
+}
+.item:nth-child(3){
+    background-color: black;
+    color: white;
+}
+form{
+    margin-top: 30px;
+}
+input{
+    display:block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font: inherit;
+    border-radius: 30px;
+}
+input[type="text"], input[type="password"]{
+    padding: 5px 20px;
+    width: 400px;
+    height: 50px;
+    border: none;
+    background-color: rgb(232, 230, 230)
+}
+input[type="text"], input[type="password"]:focus{
+    outline: none;
+}
+input[type="submit"]{
+    padding: 5px 30px;
+    border: none;
+    background-color: rgb(91, 91, 255);
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+input[type="submit"]:hover{
+    scale: 1.1;
+    background-color: rgb(81, 81, 251);
+}
+.animation-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.element{
+    height: 200px;
+    width: 200px;
+    margin-top: 60px;
+    background: blue;
+    display: inline-block;
+    align-content: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 1.35rem;
+    color: white;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+.element:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+@keyframes spin{
+    0%{
+
+    }
+    50%{
+        scale: 2;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-radius: 50%;
+        scale: 2;
+    }
+}
+.loading{
+    display: inline-block;
+    align-content: center;
+    justify-content: center;
+    margin-top: 250px;
+    height: 50px;
+    width: 50px;
+    border: 5px solid skyblue;
+    border-radius: 10px;
+    filter: blur(1px);
+    animation-name: loading;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    }
+
+@keyframes loading{
+    0%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+    }
+    33%{
+        transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg)
+    }
+    67%{
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(0deg)
+    }
+    100%{
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg)
+    }
+}
