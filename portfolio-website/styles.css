@@ -59,3 +59,44 @@ header .read-more{
 header .read-more:hover{
     background-color: var(--secondary-color);
 }
+#skill-section{
+    padding: 80px 20px 150px 20px;
+    background-color: var(--secondary-color);
+}
+#skill-section h2{
+    font-size: 3rem;
+    text-align: center;
+}
+#skill-section .wrapper{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+
+}
+.skill-container{
+    width: 400px;
+    max-width: 100%;
+    border: 5px solid var(--primary-color);
+    border-top: none;
+}
+.skill-container h3{
+    background-color: var(--primary-color);
+    padding: 15px 0;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.skill-container ul{
+    margin: 10px 0;
+    list-style: none;
+}
+.skill-container ul li{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.skill-container ul li progress{
+    accent-color: var(--accent-color);
+}
