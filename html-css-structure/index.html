@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Pattern 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header-main sticky">
+    <div class="container flex justify-between items-center">
+      <div class="logo">BRAND</div>
+      <nav>
+        <ul class="flex gap-20 no-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="section-xl bg-dark text-white">
+      <div class="container flex-col items-center text-center">
+        <h1 class="title-xl">Clean. Fast. Modern.</h1>
+        <p class="subtext">A structural pattern designed for muscle memory.</p>
+        <a href="#about" class="btn btn-primary">Learn More</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div class="flex-col justify-center">
+          <h2>Our Philosophy</h2>
+          <p>We use classes for design and IDs for link bookmarks only.</p>
+        </div>
+        <div class="media-box">
+          <img src="jli-2x2.png" alt="Work" class="img-fluid">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section bg-light">
+      <div class="container">
+        <h2 class="text-center mb-40">Expertise</h2>
+        <div class="grid-3">
+          <div class="card"><h3>Web Dev</h3></div>
+          <div class="card"><h3>UI Design</h3></div>
+          <div class="card"><h3>Growth</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container max-w-sm">
+        <h2 class="text-center mb-40">Get in Touch</h2>
+        <form class="flex-col gap-20">
+          <input type="text" placeholder="Name" class="form-input">
+          <button class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section text-center bg-dark text-white">
+    <div class="container">
+      <p>&copy; 2026 Developer Blueprint</p>
+    </div>
+  </footer>
+
+</body>
+</html>
