@@ -1,6 +1,13 @@
 /* =====================
    1. CORE & MOTION
 ===================== */
+/* :root {
+  --primary: cornflowerblue;
+  --dark: midnightblue;   
+  --light: whitesmoke;  
+  --white: white;        
+  --transition: 0.3s ease;
+} */
 :root {
   --primary: #2563eb;
   --dark: #0f172a;
