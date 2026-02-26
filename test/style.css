@@ -11,7 +11,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  font-family: system-ui;
+  font-family: system-ui, sans-serif;
   line-height: 1.6;
   color: var(--dark);
 }
@@ -23,40 +23,31 @@ body{
 
 section[id]{scroll-margin-top: 80px;}
 
-/* Flexbox Utilities (Tailwind Naming) */
-.flex {display: flex;}
-.flex-col {display: flex; flex-direction: column;}
-.items-center {align-items: center;}
-.justify-center {justify-content: center;}
-.justify-between {justify-content: space-between;}
-.text-center {text-align: center;}
-.gap-20 {gap: 20px;}
+/* POSITIONING */
+.flex{display: flex;}
+.flex-col{display: flex; flex-direction: column;}
+.justify-center{justify-content: center;}
+.justify-between{justify-content: space-between;}
+.items-center{align-items: center;}
+.text-center{text-align: center;}
+.gap-20{gap: 20px;}
 
-/* =====================
-   3. THE GRID (The Switch)
-===================== */
-
-
-.grid-2, .grid-3 {
+.grid-2, .grid-3{
   display: grid;
   gap: 30px;
-  grid-template-columns: 1fr; /* Mobile stack */
+  grid-template-columns: 1fr;
 }
 
-/* =====================
-   4. COMPONENTS
-===================== */
-.header-main {
-  padding-block: 20px;
-  background: var(--white);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+/* COMPONENTS */
+.header-main{
+  padding-block: 30px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
-
-.sticky { position: sticky; top: 0; z-index: 1000; }
-
-.btn {
+.sticky{position: sticky; top: 0; z-index: 1000;}
+.btn{
   display: inline-block;
-  padding: 0.8rem 1.8rem;
+  padding: .8rem 1.8rem;
   border-radius: 6px;
   font-weight: 600;
   text-decoration: none;
@@ -64,30 +55,28 @@ section[id]{scroll-margin-top: 80px;}
   border: none;
   transition: var(--transition);
 }
-.btn-primary { background: var(--primary); color: white; }
-.btn-primary:hover { transform: translateY(-3px); filter: brightness(1.1); }
+.btn-primary{background: var(--primary); color: var(--white);}
+.btn-primary:hover{transform: translateY(-3px); filter: brightness(1.1);}
 
-.card {
+.card{
   padding: 40px;
   background: var(--white);
   border-radius: 10px;
-  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-/* Helpers */
-.bg-dark { background: var(--dark); }
-.bg-light { background: var(--light); }
-.text-white { color: var(--white); }
-.no-list { list-style: none; }
-.img-fluid { max-width: 100%; display: block; }
-.mb-40 { margin-bottom: 40px; }
+/* helpers */
+.bg-dark{background: var(--dark);}
+.bg-light{background: var(--light);}
+.text-white{color: var(--white);}
+.no-list{list-style: none;}
+.img-fluid{max-width: 100%; display: block;}
+.mb-40{margin-bottom: 40px;}
 
-/* =====================
-   5. RESPONSIVE
-===================== */
-@media (min-width: 768px) {
-  .grid-2 { grid-template-columns: repeat(2, 1fr); }
-  .grid-3 { grid-template-columns: repeat(3, 1fr); }
-  .max-w-sm { max-width: 500px; margin-inline: auto; }
-  .title-xl { font-size: 3.5rem; font-weight: 800; line-height: 1.2; }
+
+@media (min-width: 768px){
+  .grid-2{grid-template-columns: repeat(2, 1fr);}
+  .grid-3{grid-template-columns: repeat(2, 1fr);}
+  .max-w-sm{max-width: 500px; margin-inline: auto;}
+  .title-xl{font-size: 3.5rem; font-weight: 800; line-height: 1.2;}
 }
