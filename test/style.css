@@ -56,8 +56,8 @@ section[id]{scroll-margin-top: 80px;}
   border: none;
   transition: var(--transition);
 }
-.btn-primary{background: var(--primary); color: var(--white);}
 .btn-primary:hover{transform: translateY(-3px); filter: brightness(1.1);}
+.btn-primary{background: var(--primary); color: var(--white);}
 
 .card{
   padding: 30px;
